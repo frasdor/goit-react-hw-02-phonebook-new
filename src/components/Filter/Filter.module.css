@@ -1,10 +1,17 @@
 .filter {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Ustawia elementy w kolumnie */
+    align-items: center; /* Wyśrodkowuje elementy w poziomie */
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
   
   .label {
+    display: flex;
     font-size: 18px;
-    margin-right: 10px;
+    margin-bottom: 8px;
+    color:#f0686f
   }
   
   .input {
@@ -13,7 +20,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border-color 0.3s;
-  
+    
   }
   
   .input:focus {
