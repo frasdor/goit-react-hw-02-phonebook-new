@@ -1,0 +1,23 @@
+.filter {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  
+  }
+  
+  .input:focus {
+    border-color: #007bff; 
+    outline: none; 
+  }
+  
