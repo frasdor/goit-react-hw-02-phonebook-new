@@ -12,9 +12,11 @@ class ContactForm extends Component {
     const { name, value } = e.target;
 
     if (name === 'name' && /\d/.test(value)) { // Jeśli pole 'name' zawiera cyfry, to ignoruj zmianę
+      alert('Please enter letters only in the Name field.');
       return;
     }
     if (name === 'number' && /[a-zA-Z]/.test(value)) { // Jeśli pole 'number' zawiera litery, to ignoruj zmianę
+      alert('Please enter numbers only in the Number field.');
       return;
     }
     this.setState({ [name]: value });
