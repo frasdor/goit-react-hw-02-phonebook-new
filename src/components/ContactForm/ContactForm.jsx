@@ -10,6 +10,13 @@ class ContactForm extends Component {
 
   handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name === 'name' && /\d/.test(value)) { // Jeśli pole 'name' zawiera cyfry, to ignoruj zmianę
+      return;
+    }
+    if (name === 'number' && /[a-zA-Z]/.test(value)) { // Jeśli pole 'number' zawiera litery, to ignoruj zmianę
+      return;
+    }
     this.setState({ [name]: value });
   };
 
